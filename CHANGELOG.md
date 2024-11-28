@@ -1,4 +1,9 @@
 # Change Log
+### v1.3.0
+2024-November-28
+ * Added support for React >= 18.2.0
+
+
 
 ### v1.2.0
 2015-April-09

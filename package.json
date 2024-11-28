@@ -1,6 +1,6 @@
 {
   "name": "react-mounter",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "React Mounter lets you mount React components to DOM easily.",
   "repository": {
     "type": "git",
@@ -8,39 +8,40 @@
   },
   "license": "MIT",
   "options": {
-    "mocha": "--require scripts/mocha_runner lib/**/__tests__/**/*.js"
+    "mocha": ""
   },
   "scripts": {
     "prepublish": ". ./scripts/prepublish.sh",
     "lint": "eslint ./lib",
     "lintfix": "eslint ./lib --fix",
-    "testonly": "mocha $npm_package_options_mocha",
+    "testonly": "mocha --require scripts/mocha_runner lib/**/__tests__/**/*.js",
     "test": "npm run lint && npm run testonly"
   },
   "devDependencies": {
-    "nodemon": "1.7.x",
-    "mocha": "2.x.x",
-    "chai": "3.x.x",
-    "eslint": "1.7.x",
-    "babel-eslint": "4.x.x",
-    "eslint-plugin-babel": "2.x.x",
     "babel-cli": "6.x.x",
     "babel-core": "6.x.x",
+    "babel-eslint": "4.x.x",
+    "babel-plugin-react-require": "2.x.x",
+    "babel-plugin-transform-runtime": "6.x.x",
     "babel-polyfill": "6.x.x",
     "babel-preset-es2015": "6.x.x",
-    "babel-preset-stage-2": "6.x.x",
-    "babel-plugin-transform-runtime": "6.x.x",
     "babel-preset-react": "6.x.x",
-    "babel-plugin-react-require": "2.x.x",
-    "react": "^15.0.0",
-    "react-dom": "^15.0.0",
+    "babel-preset-stage-2": "6.x.x",
+    "chai": "3.x.x",
+    "eslint": "1.7.x",
+    "eslint-plugin-babel": "2.x.x",
+    "eslint-plugin-react": "3.x.x",
+    "mocha": "2.x.x",
     "mock-require": "1.x.x",
-    "sinon": "1.17.x",
-    "eslint-plugin-react": "3.x.x"
+    "nodemon": "1.7.x",
+    "prettier": "^3.4.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sinon": "1.17.x"
   },
   "peerDependencies": {
-    "react": "0.14.x || 15.x.x",
-    "react-dom": "0.14.x || 15.x.x"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "dependencies": {
     "babel-runtime": "6.x.x",
